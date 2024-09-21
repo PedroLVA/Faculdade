@@ -6,40 +6,39 @@ app.use(bodyParser.text());
 app.use(bodyParser.json());
 
 
-const Cliente = require('./BancoDeDados/AC1');
+const bancoAC1 = require('./BancoDeDados/AC1');
 
 
 const cors = require('cors');
 app.use(cors());
 
-app.get('/cargos', Cliente.getCargos);
+app.get('/cargos', bancoAC1.getCargos);
 
 
 //Pedro Luiz Vidal Athayde - 236730
 //Raphael Carneiro Gomes - 236721
 
 //gets
-app.get('/setores', Cliente.getSetores);
+app.get('/setores', bancoAC1.getSetores);
 
-app.get('/funcionarios', Cliente.getFuncionarios);
+app.get('/funcionarios', bancoAC1.getFuncionarios);
 
-app.get('/setoresParam', Cliente.getSetorNome);
+app.get('/setoresParam', bancoAC1.getSetorNome);
 
-app.get('/funcionarios/:id', Cliente.getFuncionariosId);
+app.get('/funcionarios/:id', bancoAC1.getFuncionariosId);
 
-app.post('/funcionarios/cargo', Cliente.getFuncionariosCargo); //Não da pra passar um get com parametro no body
+app.post('/funcionarios/cargo', bancoAC1.getFuncionariosCargo); //Não da pra passar passar informação no body em uma requisição get
 
-app.get('/cargo/semFuncionario', Cliente.getCargosSemFuncionario);
-
-
-//post
+app.get('/cargo/semFuncionario', bancoAC1.getCargosSemFuncionario);
 
 
-app.post('/funcionario', Cliente.postFuncionario);
+//
 
-app.put('/funcionario/:id', Cliente.putFuncionario);
+app.post('/funcionario', bancoAC1.postFuncionario);
 
-app.delete('/funcionario/:id', Cliente.deleteFuncionario);
+app.put('/funcionario/:id', bancoAC1.putFuncionario);
+
+app.delete('/funcionario/:id', bancoAC1.deleteFuncionario);
 
 
 app.listen(3000, () => {
