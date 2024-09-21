@@ -47,7 +47,12 @@ app.get('/alunos', (req, res) => {
 app.get('/alunos/:ra', (req, res) => {
     let ra = req.params.ra;
     let alunoEncontrado = escola.find(aluno => aluno.ra == ra);
-    res.json(alunoEncontrado);
+    if(alunoEncontrado){
+        res.json(alunoEncontrado);
+    }
+
+      res.status(404).json({ message: "Aluno não encontrado" });
+    
 })
 
 
