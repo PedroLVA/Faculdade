@@ -6,7 +6,7 @@ app.use(bodyParser.text());
 app.use(bodyParser.json());
 
 
-const Cliente = require('./BancoDeDados/Cliente');
+const Cliente = require('./BancoDeDados/Funcionario');
 
 
 const cors = require('cors');
