@@ -1,4 +1,6 @@
 //método de conexão com o banco de dados mysql
+//Pedro Luiz Vidal Athayde - 236730
+//Raphael Carneiro Gomes - 236721
 async function connect() {
     const mysql = require('mysql2/promise');
     if (global.connection && global.connection.state !== 'disconnected')

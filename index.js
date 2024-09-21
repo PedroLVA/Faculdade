@@ -5,15 +5,18 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.text());
 app.use(bodyParser.json());
 
-//conexão com o banco de dados
+
 const Cliente = require('./BancoDeDados/Cliente');
 
-//configurar o CORS
+
 const cors = require('cors');
 app.use(cors());
 
 app.get('/cargos', Cliente.getCargos);
 
+
+//Pedro Luiz Vidal Athayde - 236730
+//Raphael Carneiro Gomes - 236721
 
 //gets
 app.get('/setores', Cliente.getSetores);
