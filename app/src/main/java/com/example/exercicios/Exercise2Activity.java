@@ -33,26 +33,26 @@ public class Exercise2Activity extends AppCompatActivity {
         EditText editTextValue2 = findViewById(R.id.editTextValue2);
         textViewResult = findViewById(R.id.textViewResult);
 
-        // Get the text on the button that was clicked
+
         Button clickedButton = (Button) v;
         String buttonText = clickedButton.getText().toString();
 
-        // Parse the input values
+
         String value1Str = editTextValue1.getText().toString();
         String value2Str = editTextValue2.getText().toString();
 
-        // Check if the inputs are valid
+
         if (value1Str.isEmpty() || value2Str.isEmpty()) {
             Toast.makeText(this, "Please enter both values", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        // Convert to numbers
+
         double value1 = Double.parseDouble(value1Str);
         double value2 = Double.parseDouble(value2Str);
         double result = 0;
 
-        // Determine the operation based on the button text
+
         switch (buttonText) {
             case "+":
                 result = value1 + value2;
@@ -64,7 +64,7 @@ public class Exercise2Activity extends AppCompatActivity {
                 result = value1 * value2;
                 break;
             case "/":
-                // Check for division by zero
+
                 if (value2 == 0) {
                     textViewResult.setText("Cannot divide by zero");
                     return;
@@ -73,7 +73,7 @@ public class Exercise2Activity extends AppCompatActivity {
                 break;
         }
 
-        // Display the result
+
 
         textViewResult.setText(Double.toString(result));
 
