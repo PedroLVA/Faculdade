@@ -99,19 +99,5 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void calculateAge(View v){
-        String name = editTextName.getText().toString();
-        String ageStr = editTextAge.getText().toString();
 
-        if (name.isEmpty() || ageStr.isEmpty()) {
-            textViewResult.setText("Please enter both name and age");
-            return;
-        }
-
-        int age = Integer.parseInt(ageStr);
-        boolean isAdult = age >= 18;
-
-        String resultText = name + (isAdult ? " is an adult" : " is not an adult");
-        textViewResult.setText(resultText);
-    }
 }
