@@ -32,8 +32,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonExercise3 = findViewById(R.id.buttonExercise3);
         Button buttonExercise4 = findViewById(R.id.buttonExercise4);
         Button buttonExercise5 = findViewById(R.id.buttonExercise5);
-        Button buttonExercise6 = findViewById(R.id.buttonExercise6);
-        Button buttonExercise7 = findViewById(R.id.buttonExercise7);
+
 
         buttonExercise1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,21 +75,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonExercise6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Exercise6Activity.class);
-                startActivity(intent);
-            }
-        });
-
-        buttonExercise7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Exercise7Activity.class);
-                startActivity(intent);
-            }
-        });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

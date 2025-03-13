@@ -11,7 +11,7 @@
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Exercises"
+        android:text="Exercises - Pedro \n RA: 236730"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginTop="32dp"
@@ -23,7 +23,7 @@
         android:id="@+id/buttonExercise1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Exercise 1 - Age Checker"
+        android:text="Exercise 1"
         android:layout_marginTop="24dp"
         android:layout_marginHorizontal="16dp"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
@@ -75,25 +75,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/buttonExercise6"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textViewFooter"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Exercise 6"
-        android:layout_marginTop="8dp"
-        android:layout_marginHorizontal="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/buttonExercise5"
+        android:text="Desenvolvimento Apps Mobile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.694" />
 
-    <Button
-        android:id="@+id/buttonExercise7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Exercise 7"
-        android:layout_marginTop="8dp"
-        android:layout_marginHorizontal="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/buttonExercise6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
