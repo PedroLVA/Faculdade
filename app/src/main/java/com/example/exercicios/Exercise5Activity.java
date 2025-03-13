@@ -1,24 +1,44 @@
 package com.example.exercicios;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Exercise5Activity extends AppCompatActivity {
+
+    private CheckBox checkBoxNotifications, checkBoxDarkMode, checkBoxRememberLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_exercise6);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        setContentView(R.layout.activity_exercise5);
+
+
+        checkBoxNotifications = findViewById(R.id.checkBoxNotifications);
+        checkBoxDarkMode = findViewById(R.id.checkBoxDarkMode);
+        checkBoxRememberLogin = findViewById(R.id.checkBoxRememberLogin);
+    }
+
+    public void onSavePreferencesClick(View view) {
+
+        StringBuilder selectedPreferences = new StringBuilder();
+
+        if (checkBoxNotifications.isChecked()) {
+            selectedPreferences.append("Receber notificações\n");
+        }
+        if (checkBoxDarkMode.isChecked()) {
+            selectedPreferences.append("Modo escurro\n");
+        }
+        if (checkBoxRememberLogin.isChecked()) {
+            selectedPreferences.append("Lembrar login\n");
+        }
+        if (selectedPreferences.length() > 0) {
+            Toast.makeText(this, "Preferencias selecionadas:\n" + selectedPreferences.toString(), Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, "Nenhuma preferência foi escolhida", Toast.LENGTH_SHORT).show();
+        }
     }
 }
