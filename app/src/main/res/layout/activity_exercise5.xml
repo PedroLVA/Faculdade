@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Exercise5Activity">
 
-    <!-- CheckBox para Receber Notificações -->
+
     <CheckBox
         android:id="@+id/checkBoxNotifications"
         android:layout_width="wrap_content"
@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- CheckBox para Modo Escuro -->
+
     <CheckBox
         android:id="@+id/checkBoxDarkMode"
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- CheckBox para Lembrar Login -->
+
     <CheckBox
         android:id="@+id/checkBoxRememberLogin"
         android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Botão para Salvar Preferências -->
+
     <Button
         android:id="@+id/buttonSavePreferences"
         android:layout_width="match_parent"

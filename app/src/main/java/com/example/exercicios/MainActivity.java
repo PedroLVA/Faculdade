@@ -25,8 +25,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        // Initialize views AFTER setContentView
-        // Initialize buttons
+
         Button buttonExercise1 = findViewById(R.id.buttonExercise1);
         Button buttonExercise2 = findViewById(R.id.buttonExercise2);
         Button buttonExercise3 = findViewById(R.id.buttonExercise3);
@@ -50,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Similarly add onClick listeners for buttons 3-7
+
         buttonExercise3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

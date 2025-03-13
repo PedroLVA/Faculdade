@@ -41,7 +41,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Add buttons for exercises 3-7 following the same pattern -->
+
     <Button
         android:id="@+id/buttonExercise3"
         android:layout_width="match_parent"
