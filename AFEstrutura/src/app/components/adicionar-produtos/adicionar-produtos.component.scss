@@ -1,0 +1,20 @@
+@import "../../../assets/variables.scss";
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center !important;
+}
+.border-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    border-radius: 20px;
+  }
+
+  .form {
+    max-width: 200px !important;
+    
+   
+}
+  

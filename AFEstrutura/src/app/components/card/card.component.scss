@@ -1,0 +1,29 @@
+@import "../../../assets/variables.scss";
+.example-card {
+    width: 400px;
+    min-height: 264px;
+    border-top: 20px solid $primary-purple;
+    border-radius: 20px ;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+  
+  .mat-card-content p {
+    white-space: normal; /* Ensure the text can wrap */
+    word-wrap: break-word; /* Break long words to fit within the container */
+    overflow-wrap: break-word; /* Ensure wrapping in modern browsers */
+  }
+ .flex{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+ }
+
+ .raisedButton{
+  align-self: flex-end;
+   border-radius: 20px ;
+ }
+
+ 
+
+ 
