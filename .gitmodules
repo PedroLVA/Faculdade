@@ -1,0 +1,9 @@
+[submodule "AFEstrutura"]
+	path = AFEstrutura
+	url = https://github.com/PedroLVA/AFEstrutura.git
+[submodule "OleoLimpo"]
+	path = OleoLimpo
+	url = https://github.com/PedroLVA/OleoLimpo
+[submodule "LinguagemDeProgramacao2024"]
+	path = LinguagemDeProgramacao2024
+	url = https://github.com/PedroLVA/linguagemDeProgramacao2024.git
